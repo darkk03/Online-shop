@@ -1,2 +1,2 @@
 # Online-shop
-Online shop created with react + redux 
+Online shop created with react
