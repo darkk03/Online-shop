@@ -1,36 +1,122 @@
 .header
-{
-    justify-content: center; /* Горизонтальное выравнивание по центру */
-    align-items: center; /* Вертикальное выравнивание по центру */
-    display: flex;
-    margin-top: 50px;
+{   
     margin-bottom: 50px;
-    width: 100%;
-    /* padding: 25px 20px; */
+    padding: 25px 200px;
 }
 
-.info {
+.info 
+{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
 }
 
-.user {
+.user 
+{
     display: flex;
     align-items: center;
     column-gap: 10px;
     cursor: pointer;
 }
 
-.avatar
+.profile_photo
 {
+    display: flex;
     border-radius: 50%;
 }
 
-.username {
+.username 
+{
+    display: flex;
     font-size: 10px;
     line-height: 12px;
     color: var(--grey);
-  }
+}
 
+.form 
+{
+    display: flex;
+    align-items: center;
+    background: var(--dark);
+    border-radius: 6px;
+    height: 27px;
+    padding: 7px 10px;
+    column-gap: 16px;
+    width: 300px;
+    position: relative;
+}
+
+.icon
+{
+    fill: var(--grey);
+}
+
+.input input 
+{
+    font-family: Montserrat, Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--grey);
+    background: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.account 
+{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.favourites 
+{
+    cursor: pointer;
+}
+
+.icon_fav 
+{
+    stroke: var(--grey);
+    fill: none;
+}
+
+.icon_fav:hover 
+{
+  stroke: var(--violet-dark);
+  transition: stroke 0.3s; 
+}
+
+.cart 
+{
+    position: relative;
+}
+
+.icon_cart 
+{
+    stroke: var(--grey);
+    fill: var(--grey);
+}
+
+.icon_cart:hover 
+{
+    stroke: var(--violet-dark);
+    transition: stroke 0.3s; 
+}
+
+.count 
+{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--violet);
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--light);
+    text-align: center;
+    line-height: 16px;
+}

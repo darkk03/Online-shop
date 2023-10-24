@@ -1,6 +1,6 @@
 import React from "react";
 
-import '../../styles/header.css'; // Изменил эту строку
+import '../../styles/header.css';
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../utils/routes";
 import logo from '../../images/logo_white.svg';
@@ -10,18 +10,18 @@ import sprite from '../../images/sprite.svg';
 const Header = () => {
     return (
     <div className="header"> 
-        <div className="logo"> 
-            <Link to={ROUTES.HOME}>
-            <img src={logo} alt="Logo" style={{ width: '300px', height: '50px' }} />
-            </Link>
-        </div>
         <div className="info">
+            <div className="logo"> 
+                <Link to={ROUTES.HOME}>
+                <img src={logo} alt="Logo" style={{ width: '300px', height: '50px' }} />
+                </Link>
+            </div>
             <div className="user">
                 <div className="profile_photo">
-                    <img src={Profile_photo} alt="profile_photo" style={{ width: '50px', height: '50px' }}/>
+                    <img src={Profile_photo} alt="profile_photo" style={{ width: '35px', height: '35px', borderRadius: '50%' }}/>
                 </div>
                 <div className="username">
-                    123
+                    User_User
                 </div>
             </div>
             <form className="form">
@@ -31,10 +31,11 @@ const Header = () => {
                     </svg>
                 </div>
                 <div className="input">
-                    <input type="search" name="search" placeholder="search" autoComplete="off" onChange={() => {}} value=''/>
+                    <input type="search" name="search" placeholder="Search for anything..." autoComplete="off" onChange={() => {}} value=''/>
                 </div>
                 
-                { false && <div className="box"></div>}
+                <div className="box"></div>
+                {/* { false && <div className="box"></div>} */}
                 
             </form>
 
