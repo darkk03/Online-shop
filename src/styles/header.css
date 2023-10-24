@@ -1,0 +1,36 @@
+.header
+{
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    /* padding: 25px 20px; */
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.avatar
+{
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--grey);
+  }
+
