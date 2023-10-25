@@ -8,33 +8,34 @@ import sprite from '../../images/sprite.svg';
 
 const Footer = () => {
     return (
-        
         <div className="footer">
-            <div className="info_footer">
-                <div className="logo"> 
-                    <Link to={ROUTES.HOME}>
-                        <img src={logo} alt="Logo" style={{ width: '300px', height: '50px' }} />
-                    </Link>
-                </div>
-                <div className="dev">
-                    Developed by Darkk03
-                </div>
-                <div className="socials">
-                    <a href="">
-                        <svg className="icon" style={{ width: '50px', height: '30px' }}>
-                            <use xlinkHref={`${sprite}#youtube`} />
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg className="icon" style={{ width: '50px', height: '30px' }}>
-                            <use xlinkHref={`${sprite}#facebook`} />
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg className="icon" style={{ width: '50px', height: '30px' }}>
-                            <use xlinkHref={`${sprite}#instagram`} />
-                        </svg>
-                    </a>
+            <div className="footer-content"> {/* Добавляем обертку для контента */}
+                <div className="info_footer">
+                    <div className="logofooter">
+                        <Link to={ROUTES.HOME}>
+                            <img src={logo} alt="Logo" style={{ width: '300px', height: '50px' }} />
+                        </Link>
+                    </div>
+                    <div className="dev">
+                        Developed by Darkk03
+                    </div>
+                    <div className="socials">
+                        <a href="">
+                            <svg className="icon" style={{ width: '50px', height: '30px' }}>
+                                <use xlinkHref={`${sprite}#youtube`} />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg className="icon" style={{ width: '50px', height: '30px' }}>
+                                <use xlinkHref={`${sprite}#facebook`} />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg className="icon" style={{ width: '50px', height: '30px' }}>
+                                <use xlinkHref={`${sprite}#instagram`} />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,25 +1,24 @@
-.footer {
+.info_footer 
+{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-    padding: 24px;
-  }
+    flex-grow: 1;
+    padding: 25px 40px;
+}
   
 .info_footer 
 {
-    color: var(--dark-sea);
-    font-size: 12px;
-    line-height: 15px;
+    color: var(--violet-dark);
 }
   
 .rights a 
 {
     color: var(--violet);
 }
-  
+
 .socials 
 {
+    margin-top: 10px;
     display: flex;
     gap: 15px;
 }
@@ -29,9 +28,26 @@
     width: 24px;
     height: 24px;
     fill: var(--dark-sea);
+    transition: fill 0.3s;
 }
   
 .socials svg:hover 
 {
     fill: var(--violet);
+    transition: fill 0.3s;
+}
+
+.dev
+{
+    margin-top: 20px;
+    margin-right: 120px;
+    
+}
+
+.footer-content {
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+    max-width: 1600px; 
+    margin: 0 auto;
 }
