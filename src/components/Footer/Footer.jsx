@@ -9,7 +9,7 @@ import sprite from '../../images/sprite.svg';
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer-content"> {/* Добавляем обертку для контента */}
+            <div className="footer-content">
                 <div className="info_footer">
                     <div className="logofooter">
                         <Link to={ROUTES.HOME}>

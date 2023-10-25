@@ -3,7 +3,7 @@ import React from "react";
 import AppRoutes from "../Routes/Routes";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Sidebar from "../Sidebar/sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const App = () => {
     return (
