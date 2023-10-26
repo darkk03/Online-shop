@@ -15,7 +15,7 @@ const Sidebar = () => {
                     <div className="menu">
                         {list.map(({ id, name }) => (
                             <div key={id}>
-                                <NavLink className={({ isActive }) => `${list} ${isActive ? active : ""}`} to={`/categories/${id}`} > {name} </NavLink>
+                                <NavLink to={`/categories/${id}`} style={{ textDecoration: 'none', color: 'var(--dark-sea)' }} > {name} </NavLink>
                             </div>
                         ))}
                     </div>

@@ -24,7 +24,7 @@
     row-gap: 12px;
 }
 
-.menu-link
+.menu
 {
     text-decoration: none;
     color: var(--dark-sea);
@@ -32,11 +32,11 @@
     line-height: 17px;
 }
 
-.menu-link:hover 
+/* .menu:hover 
 {
     color: var(--violet-dark);
     transition: color 0.3s;
-}
+} */
 
 .sidebar_footer 
 {
