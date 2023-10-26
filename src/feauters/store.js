@@ -1,11 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import categoriesReducer from './categories/categoriesReducer'; 
 
 import categoriesSlice from "./categories/categoriesSlice";
 
 export const store = configureStore({
     reducer: {
-        categories: categoriesReducer,
+        categories: categoriesSlice,
     },
     devTools: process.env.NODE_ENV !== 'production', 
 });

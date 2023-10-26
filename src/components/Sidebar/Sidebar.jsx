@@ -13,11 +13,11 @@ const Sidebar = () => {
                 <div className="title">CATEGORIES</div>
                 <nav>
                     <div className="menu">
-                    {list && list.map(({ id, name }) => (
-                        <div key={id}>
-                            <NavLink className={({ isActive }) => `${link} ${isActive ? active : ""}` } to={`/categories/${id}`} > {name} </NavLink>
-                        </div>
-                    ))}
+                        {list.map(({ id, name }) => (
+                            <div key={id}>
+                                <NavLink className={({ isActive }) => `${list} ${isActive ? active : ""}`} to={`/categories/${id}`} > {name} </NavLink>
+                            </div>
+                        ))}
                     </div>
                 </nav>
                 <div className="sidebar_footer">
@@ -34,3 +34,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
