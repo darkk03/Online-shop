@@ -1,0 +1,98 @@
+.Poster 
+{
+    position: relative;
+    flex-grow: 1;
+    margin-left: 535px;
+    margin-bottom: 20px;
+    margin-top: -490px;
+
+}
+
+.Poster-content 
+{
+    width: 1172px;
+    padding: 24px;
+    height: 423px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+}
+  
+.titel-poster 
+{
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 145px;
+    text-transform: uppercase;
+    color: var(--bg);
+    text-align: center;
+}
+
+.h1-poster
+{
+    font-size: 80px;
+}
+
+.h2-poster
+{
+    font-size: 50px;
+}
+
+.product 
+{
+    position: relative;
+    padding-left: 42px;
+    display: flex;
+    align-items: stretch;
+    margin-top: 9px;
+}
+
+.poster-subtext 
+{
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--sea);
+}
+
+.poster-image 
+{
+    position: relative;
+    flex-grow: 1;
+    height: 250px;
+}
+
+.poster-image img 
+{
+    position: absolute;
+    bottom: -15%;
+    right: 10%;
+    max-width: unset;
+}
+
+.poster-button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: var(--white);
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.poster-button {
+  background: var(--violet);
+  box-shadow: var(--violet);
+}
+
+.poster-button:hover {
+  box-shadow: 0 0 5px var(--violet-dark),
+              0 0 25px var(--violet-dark),
+              0 0 50px var(--violet-dark),
+              0 0 100px var(--violet-dark);
+}
+
