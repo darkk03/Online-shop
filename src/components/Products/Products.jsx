@@ -3,18 +3,21 @@ import React from "react";
 import '../../styles/Products.css'
 import { Link } from "react-router-dom";
 
-const Products = ({title, products = []}) =>{
+const Products = ({title, products = [], amount}) =>{
+
+    const list = products.filter((_, i) => i < amount  )
+
     return(
         <div className="Products">
             <div className="Products-content">
                 <h2>
-                    {title}
+                    Trending
                 </h2>
                 <div className="list">
-                    {products.map (({ id, images, title, category: { name: cat}, price})  => (
-                        <link to={`/products/${id}`} key={id} className="product">
-                            <div className="image" style={{ backgroundImage: `url(${images[0]})`}}></div>
-                            <div className="contentprod">
+                    {list.map (({ id, images, title, category: { name: cat}, price})  => (
+                        <Link to={`/products/${id}`} key={id} className="mainproduct">   
+                            <img src={images[0]} alt="Product Image" className="image_producs"/>                     
+                            <div className="contentprod">  
                                 <h3 className="product-title">
                                     {title}
                                 </h3>
@@ -23,23 +26,21 @@ const Products = ({title, products = []}) =>{
                                 </div>
                                 <div className="info">
                                     <div className="prices">
-                                        <div className="prevprice">
-                                            {Math.floor(price * 0.8)}$
-                                        </div>
+                                            {Math.floor(price)}$
                                     </div>
                                     <div className="purchases">
                                         {Math.floor( Math.random() * 20 + 1)} purchased 
-                                        {/* chas 0 22 */}
                                     </div>
                                 </div>
                             </div>
 
-                        </link>
+                        </Link>
                     ))}
                 </div>
             </div>
         </div>
     )
 }
+
 
 export default Products;

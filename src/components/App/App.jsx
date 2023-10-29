@@ -7,6 +7,7 @@ import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import { useDispatch } from "react-redux";
 import { getCategories } from "../../feauters/categories/categoriesSlice";
+import { getProducts } from "../../feauters/products/productsSlice";
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
 
     useEffect(() => {
         dispath(getCategories())
+        dispath(getProducts())
     }, [dispath])
 
     return (
