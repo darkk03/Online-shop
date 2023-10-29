@@ -3,6 +3,7 @@ import '../../styles/sidebar.css';
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../utils/routes";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     const { list } = useSelector(({ categories }) => categories);
@@ -21,9 +22,9 @@ const Sidebar = () => {
                     </div>
                 </nav>
                 <div className="sidebar_footer">
-                    <a href="/help" target="_blank" className="link">
+                    <Link to={ROUTES.HELP} className="link">
                         Help
-                    </a>
+                    </Link>
                     <a href="/terms" target="_blank" className="link">
                         Terms and Conditions
                     </a>

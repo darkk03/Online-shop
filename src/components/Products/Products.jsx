@@ -15,7 +15,7 @@ const Products = ({title, products = [], amount}) =>{
                 </h2>
                 <div className="list">
                     {list.map (({ id, images, title, category: { name: cat}, price})  => (
-                        <Link to={`/products/${id}`} key={id} className="mainproduct">   
+                        <Link to={`/products/${id}`} key={id} className="mainproduct" style={{ textDecoration: 'none', color: 'var(--dark-sea)'}}>   
                             <img src={images[0]} alt="Product Image" className="image_producs"/>                     
                             <div className="contentprod">  
                                 <h3 className="product-title">

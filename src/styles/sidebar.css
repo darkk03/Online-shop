@@ -1,6 +1,6 @@
 .sidebar
 {
-    margin-left: 160px;
+    margin-right: 1240px;
     margin-bottom: 20px;
 }
 
@@ -14,6 +14,7 @@
     background-color: var(--dark); 
     border-radius: 20px;
     overflow: hidden; 
+    margin: 0 auto;
 }
 
 .menu 

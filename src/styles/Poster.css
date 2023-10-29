@@ -2,10 +2,9 @@
 {
     position: relative;
     flex-grow: 1;
-    margin-left: 535px;
+    margin-left: 380px;
     margin-bottom: 20px;
     margin-top: -490px;
-
 }
 
 .Poster-content 
@@ -18,6 +17,7 @@
     background-color: var(--dark); 
     border-radius: 20px;
     overflow: hidden; 
+    margin: 0 auto;
 }
   
 .titel-poster 

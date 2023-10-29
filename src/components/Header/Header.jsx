@@ -10,7 +10,7 @@ import sprite from '../../images/sprite.svg';
 const Header = () => {
     return (
     <div className="header"> 
-        <div className="info">
+        <div className="info-header">
             <div className="logo"> 
                 <Link to={ROUTES.HOME}>
                 <img src={logo} alt="Logo" style={{ width: '300px', height: '50px' }} />
