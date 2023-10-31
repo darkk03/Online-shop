@@ -8,13 +8,15 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
     const { list } = useSelector(({ categories }) => categories);
 
+    const Categorieslimit = list.slice(0, 5);
+
     return (
         <div className="sidebar">
             <div className="sidebar-content">
                 <div className="title">CATEGORIES</div>
                 <nav>
                     <div className="menu">
-                        {list.map(({ id, name }) => (
+                        {Categorieslimit.map(({ id, name }) => (
                             <div key={id}>
                                 <NavLink to={`/categories/${id}`} style={{ textDecoration: 'none', color: 'var(--dark-sea)' }} > {name} </NavLink>
                             </div>
@@ -25,9 +27,9 @@ const Sidebar = () => {
                     <Link to={ROUTES.HELP} className="link">
                         Help
                     </Link>
-                    <a href="/terms" target="_blank" className="link">
+                    <Link to={ROUTES.TERMS} className="link">
                         Terms and Conditions
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

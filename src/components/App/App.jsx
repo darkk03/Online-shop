@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { getCategories } from "../../feauters/categories/categoriesSlice";
 import { getProducts } from "../../feauters/products/productsSlice";
 import Help from "../help/help"
+import Terms from "../terms/terms"
 
 const App = () => {
 
@@ -21,21 +22,22 @@ const App = () => {
     }, [dispath])
 
     return (
-    <div className="app">
-        <Header />
+        <div className="app">
+            <Header />
 
-        <div className="container">
-            
-            <Routes>
-                <Route path={ROUTES.HELP} element={<Help />} />
-            </Routes>
-            <AppRoutes />
+            <div className="container">
+                
+                <Routes>
+                    <Route path={ROUTES.HELP} element={<Help />} />
+                    <Route path={ROUTES.TERMS} element={<Terms />} />
+                </Routes>
+                <AppRoutes />
 
+            </div>
+
+
+            <Footer />
         </div>
-
-
-        <Footer />
-    </div>
     );
 };
 

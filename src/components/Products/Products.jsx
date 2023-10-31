@@ -2,10 +2,25 @@ import React from "react";
 
 import '../../styles/Products.css'
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const Products = ({title, products = [], amount}) =>{
 
-    const list = products.filter((_, i) => i < amount  )
+const Products = ({ title, products = [], amount }) => {
+    const [displayedAmount, setDisplayedAmount] = useState(amount);
+  
+    const list = products.slice(0, displayedAmount);
+  
+    const handleShowMore = () => {
+      if (displayedAmount + 30 <= products.length) {
+        setDisplayedAmount(displayedAmount + 30);
+        } else {
+            setDisplayedAmount(products.length);
+        }
+    };
+  
+    const handleShowLess = () => {
+      setDisplayedAmount(amount); 
+    };
 
     return(
         <div className="Products">
@@ -36,6 +51,19 @@ const Products = ({title, products = [], amount}) =>{
 
                         </Link>
                     ))}
+    
+                    <div className="buttons-container">
+                        {displayedAmount < products.length && (
+                        <button onClick={handleShowMore} className="show-more-button">
+                            Show More
+                        </button>
+                        )}
+                        {displayedAmount > amount && (
+                        <button onClick={handleShowLess} className="show-less-button">
+                            Show Less
+                        </button>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

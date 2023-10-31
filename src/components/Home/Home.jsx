@@ -3,17 +3,19 @@ import Poster from '../Poster/Poster';
 import Products from "../Products/Products";
 import { useSelector } from "react-redux";
 import Sidebar from "../Sidebar/Sidebar";
+import Categories from "../Categories/categories"
 
 
 const Home = () => {
 
-    const { list } = useSelector(({products}) => products)
+    const { products, categories } = useSelector((state) => state);
 
     return (
         <>
-            <Sidebar />
+            <Sidebar/>
             <Poster />
-            <Products products={list} amount={5}/>
+            <Products products={products.list} amount={5}/>
+            <Categories products={categories.list} amount={5}/>
         </>
     )
 };
