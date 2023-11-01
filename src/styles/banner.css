@@ -1,0 +1,120 @@
+.banner {
+  display: flex;
+  width: 100%;
+  height: 570px;
+  margin-bottom: 20px;
+}
+
+.banner_content 
+{
+    width: 1550px;
+    padding: 24px;
+    display: flex;
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+
+.banner-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-left:before,
+.banner-left:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.banner-left:before {
+  width: 204px;
+  height: 170px;
+  left: -25px;
+  bottom: 74px;
+  /* background: url(../images/shoe.png) no-repeat center/contain; */
+}
+
+.banner-left:after {
+  width: 269px;
+  height: 151px;
+  right: -25px;
+  bottom: -25px;
+  /* background: url(../images/switch.png) no-repeat center/contain; */
+}
+
+.content-left {
+  color: var(--violet);
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+}
+
+.content-left span {
+  line-height: 183px;
+  font-size: 150px;
+  display: block;
+}
+
+.banner-more {
+  margin-top: 27px;
+}
+
+.banner-right {
+  width: 50%;
+  position: relative;
+}
+
+.discount {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 24px;
+  /* text-align: center; */
+  color: var(--bg);
+  position: absolute;
+  margin-left: 180px;
+  /* transform: translateX(-50%); */
+  bottom: 260px;
+}
+
+.discount span {
+  color: var(--violet);
+  font-weight: 700;
+}
+
+.eventimg{
+    width: 800px;
+    margin-top: -50px;
+}
+
+.banner-more {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: var(--white);
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.banner-more {
+  background: var(--violet);
+  box-shadow: var(--violet);
+}
+
+.banner-more:hover {
+  box-shadow: 0 0 5px var(--violet-dark),
+              0 0 25px var(--violet-dark),
+              0 0 50px var(--violet-dark),
+              0 0 100px var(--violet-dark);
+}

@@ -52,7 +52,7 @@ const Products = ({ title, products = [], amount }) => {
                         </Link>
                     ))}
     
-                    <div className="buttons-container">
+                    {/* <div className="buttons-container">
                         {displayedAmount < products.length && (
                         <button onClick={handleShowMore} className="show-more-button">
                             Show More
@@ -63,7 +63,19 @@ const Products = ({ title, products = [], amount }) => {
                             Show Less
                         </button>
                         )}
-                    </div>
+                    </div> */}
+                </div>
+                <div className="buttons-container">
+                        {displayedAmount < products.length && (
+                        <button onClick={handleShowMore} className="show-more-button">
+                            Show More
+                        </button>
+                        )}
+                        {displayedAmount > amount && (
+                        <button onClick={handleShowLess} className="show-less-button">
+                            Show Less
+                        </button>
+                        )}
                 </div>
             </div>
         </div>

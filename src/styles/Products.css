@@ -45,6 +45,7 @@ h2
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 300px;
 } 
 
 .contentprod 
@@ -101,6 +102,14 @@ h2
   font-size: 15px;
   line-height: 12px;
 }
+
+
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 
 .show-more-button {
   margin-right: 20px;
