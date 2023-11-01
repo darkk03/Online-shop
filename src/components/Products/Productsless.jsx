@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
-const Products = ({ title, products = [], amount }) => {
+const Products = ({ title, products = [], amount, maxPrice }) => {
     const [displayedAmount, setDisplayedAmount] = useState(amount);
-    const list = products.slice(0, displayedAmount);
+    const filteredProducts = products.filter((product) => product.price < maxPrice);
+    const list = filteredProducts.slice(0, displayedAmount);
   
     const handleShowMore = () => {
       if (displayedAmount + 30 <= products.length) {
