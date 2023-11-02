@@ -4,5 +4,4 @@ export const ROUTES = {
     CATEGORY: '/cagories/:id',
     PRODUCT: '/products/:id',
     HELP: '/help',
-    TERMS: '/terms'
 }

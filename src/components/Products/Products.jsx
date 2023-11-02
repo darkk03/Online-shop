@@ -8,7 +8,7 @@ import { useState } from "react";
 const Products = ({ title, products = [], amount }) => {
     const [displayedAmount, setDisplayedAmount] = useState(amount);
     const list = products.slice(0, displayedAmount);
-  
+    
     const handleShowMore = () => {
       if (displayedAmount + 30 <= products.length) {
         setDisplayedAmount(displayedAmount + 30);

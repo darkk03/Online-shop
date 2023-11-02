@@ -10,7 +10,6 @@ import { useDispatch } from "react-redux";
 import { getCategories } from "../../feauters/categories/categoriesSlice";
 import { getProducts } from "../../feauters/products/productsSlice";
 import Help from "../help/help"
-import Terms from "../terms/terms"
 
 const App = () => {
 
@@ -29,7 +28,6 @@ const App = () => {
                 
                 <Routes>
                     <Route path={ROUTES.HELP} element={<Help />} />
-                    <Route path={ROUTES.TERMS} element={<Terms />} />
                 </Routes>
                 <AppRoutes />
 

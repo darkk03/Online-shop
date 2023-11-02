@@ -27,9 +27,6 @@ const Sidebar = () => {
                     <Link to={ROUTES.HELP} className="link">
                         Help
                     </Link>
-                    <Link to={ROUTES.TERMS} className="link">
-                        Terms and Conditions
-                    </Link>
                 </div>
             </div>
         </div>

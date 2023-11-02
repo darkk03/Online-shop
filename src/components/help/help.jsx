@@ -3,6 +3,10 @@ import React from "react";
 import '../../styles/help.css';
 
 import sprite from '../../images/sprite.svg';
+import order from '../../images/order.png';
+import infimg from '../../images/infprod.png';
+import pay from '../../images/payment.png';
+import contact from '../../images/contact.png';
 
 const Help = () => {
   return (
@@ -31,46 +35,46 @@ const Help = () => {
         </form>
       </div>
       <div className="help-body">
-      <div>
-        <h2>Ordering and Shipping</h2>
-        <ul>
-          <li><a href="/help/ordering">How to place an order</a></li>
-          <li><a href="/help/tracking">Tracking your shipment</a></li>
-          <li><a href="/help/shipping">Shipping policies</a></li>
-          <li><a href="/help/returns">Returns and exchanges</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Product Information</h2>
-        <ul>
-          <li><a href="/help/descriptions">Product descriptions</a></li>
-          <li><a href="/help/sizing">Sizing and fit guides</a></li>
-          <li><a href="/help/care">Care instructions</a></li>
-          <li><a href="/help/availability">Product availability</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Account and Payment</h2>
-        <ul>
-          <li><a href="/help/account">Creating and managing your account</a></li>
-          <li><a href="/help/payment">Payment options</a></li>
-          <li><a href="/help/security">Security and privacy</a></li>
-          <li><a href="/help/password">Forgotten password</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Contact Us</h2>
-        <ul>
-          <li><a href="/help/customer-support">Customer support</a></li>
-          <li><a href="/help/live-chat">Live chat</a></li>
-          <li><a href="/help/email-support">Email support</a></li>
-          <li><a href="/help/phone-support">Phone support</a></li>
-        </ul>
-      </div>
-    </div>
-      <div className="help-footer">
-        If you can't find the information you're looking for or need further assistance, don't hesitate to contact our friendly support team. We're here to help you every step of the way.
-        Thank you for choosing [Your Online Store Name] for your shopping needs.
+        <div className="Ordering-and-Shipping">
+          <h2>Ordering and Shipping</h2>
+          <img src={order} className="orderimg"></img>
+          <div className="oshlist">
+            <button href="" className="oshitem">How to place an order</button>
+            <button href="" className="oshitem">Tracking your shipment</button>
+            <button href="" className="oshitem">Shipping policies</button>
+            <button href="" className="oshitem">Returns and exchanges</button>
+          </div>
+        </div>
+        <div className="Product-Information">
+          <h2>Product Information</h2>
+          <img src={infimg} className="infimg"></img>
+          <div className="inflist">
+            <button className='infitem' href="">Product descriptions</button>
+            <button className='infitem' href="">Sizing and fit guides</button>
+            <button className='infitem' href="">Care instructions</button>
+            <button className='infitem' href="">Product availability</button>
+          </div>
+        </div>
+        <div className="Account-and-Payment">
+          <h2>Account and Payment</h2>
+          <img src={pay} className="payimg"></img>
+          <div className="paylist">
+            <button className='payitem' href="">Creating and managing your account</button>
+            <button className='payitem' href="">Payment options</button>
+            <button className='payitem' href="">Security and privacy</button>
+            <button className='payitem' href="">Forgotten password</button>
+          </div>
+        </div>
+        <div className="Contact-Us">
+          <h2>Contact Us</h2>
+          <img src={contact} className="contimg"></img>
+          <div className="contlist">
+            <button className='contitem' href="">Customer support</button>
+            <button className='contitem' href="">Live chat</button>
+            <button className='contitem' href="">Email support</button>
+            <button className='contitem' href="">Phone support</button>
+          </div>
+        </div>
       </div>
     </div>
   );
