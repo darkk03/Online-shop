@@ -1,0 +1,25 @@
+.product-cart{
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+    max-width: 1560px; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.image-producs{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.images-products{
+    width: 187px;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}

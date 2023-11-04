@@ -26,9 +26,6 @@ const App = () => {
 
             <div className="container">
                 
-                <Routes>
-                    <Route path={ROUTES.HELP} element={<Help />} />
-                </Routes>
                 <AppRoutes />
 
             </div>
