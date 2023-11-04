@@ -6,7 +6,8 @@ import '../../styles/Product.css';
 
 import { ROUTES } from "../../utils/routes";
 
-const SIZES = [4, 4.5, 5];
+
+    
 
 const Product = (item) => {
     const { title, price, images, description } = item;
@@ -14,6 +15,7 @@ const Product = (item) => {
     const dispatch = useDispatch();
   
     const [currentImage, setCurrentImage] = useState(images[0]);
+    const [currentSize, setCurrentSize] = useState();
   
     return (
         <div className="product-cart">
@@ -29,6 +31,36 @@ const Product = (item) => {
                         className="images-products"
                     />
                 ))}
+            </div>
+
+            <div className="product-info">
+                <div className="sing-product-title">
+                    {title}
+                </div>
+                <div className="sing-product-price">
+                    {price}$
+                </div>
+                <div className="sing-product-desk">
+                    {description}
+                </div>
+                <div className="sing-product-color">
+                    Color: <span> Black </span>
+                </div>
+                <div className="sing-product-size">
+                    Sizes:
+                    <button className="bm"> M </button>
+                    <button className="bl"> L </button>
+                    <button className="bxl"> XL </button>
+                </div>
+                <div className="buttons-container">
+                        <button  className="Add-to-cart">
+                            Add to cart
+                        </button>
+                        <button  className="Add-to-favorite">
+                            Add to favorite
+                        </button>
+                </div>
+
             </div>
             
 

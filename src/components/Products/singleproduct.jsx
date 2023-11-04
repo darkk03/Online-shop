@@ -3,10 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { useGetProductQuery  } from "../../feauters/singleproduct/singleproductSlice";
+import { getRelatedProducts } from "../../feauters/products/productsSlice";
+import { shuffle } from "../../feauters/products/productsSlice";
+
+
 
 import { ROUTES } from "../../utils/routes";
 
 import Product from "../Products/Product";
+import Products from "../Products/Products";
 
 const SingleProduct = () => {
     const dispatch = useDispatch();
@@ -25,7 +30,8 @@ const SingleProduct = () => {
   
     useEffect(() => {
       if (!data || !list.length) return;
-  
+
+      dispatch(getRelatedProducts(data.category.id));
     }, [data, dispatch, list.length]);
   
     return !data ? (
@@ -33,6 +39,7 @@ const SingleProduct = () => {
     ) : (
       <>
         <Product {...data} />
+        <Products products={related} amount={5} title="Related products" />
       </>
     );
   };

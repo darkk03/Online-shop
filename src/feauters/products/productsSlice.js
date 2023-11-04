@@ -15,6 +15,15 @@ export const getProducts = createAsyncThunk(
   }
 );
 
+function shuffle(array) {
+  const shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
 const productsSlice = createSlice({
   name: "products",
   initialState: {
@@ -22,6 +31,12 @@ const productsSlice = createSlice({
     // filtered: [],
     // related: [],
     isLoading: false,
+  },
+  reducers: {
+    getRelatedProducts: (state, { payload }) => {
+      const list = state.list.filter(({ category: { id } }) => id === payload);
+      state.related = shuffle(list);
+    },
   },
 
   extraReducers: (builder) => {
@@ -39,3 +54,4 @@ const productsSlice = createSlice({
 });
 
 export default productsSlice.reducer;
+export const { getRelatedProducts } = productsSlice.actions;

@@ -36,6 +36,9 @@ const Products = ({ title, products = [], amount, maxPrice }) => {
                                 <div className="cat">
                                     {cat}
                                 </div>
+                                <div className="title">
+                                    {title}
+                                </div>
                                 <div className="info">
                                     <div className="prices">
                                             {Math.floor(price)}$
