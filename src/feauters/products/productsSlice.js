@@ -28,8 +28,6 @@ const productsSlice = createSlice({
   name: "products",
   initialState: {
     list: [],
-    // filtered: [],
-    // related: [],
     isLoading: false,
   },
   reducers: {

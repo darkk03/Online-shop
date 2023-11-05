@@ -6,9 +6,6 @@ import '../../styles/Product.css';
 
 import { ROUTES } from "../../utils/routes";
 
-
-    
-
 const Product = (item) => {
     const { title, price, images, description } = item;
   
@@ -62,12 +59,6 @@ const Product = (item) => {
                 </div>
 
             </div>
-            
-
-
-
-
-
     </div>
     )
 };

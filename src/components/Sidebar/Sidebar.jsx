@@ -17,7 +17,7 @@ const Sidebar = () => {
                 <nav>
                     <div className="menu">
                         {Categorieslimit.map(({ id, name }) => (
-                            <div key={id}>
+                            <div  key={id}>
                                 <NavLink to={`/categories/${id}`} style={{ textDecoration: 'none', color: 'var(--dark-sea)' }} > {name} </NavLink>
                             </div>
                         ))}

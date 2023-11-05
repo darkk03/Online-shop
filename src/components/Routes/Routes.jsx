@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import {ROUTES} from "../../utils/routes"
 import Singleproduct from "../Products/singleproduct"
 import Help from "../help/help"
+import SingleCategory from "../Categories/singleCatgory"
 
 const AppRoutes = () => {
     return(
@@ -11,6 +12,7 @@ const AppRoutes = () => {
             <Route index element={<Home />}/>
             <Route path={ROUTES.PRODUCT} element={<Singleproduct />}/>
             <Route path={ROUTES.HELP} element={<Help />} />
+            <Route path={ROUTES.CATEGORY} element={<SingleCategory />} />
         </Routes>
     );
 };
