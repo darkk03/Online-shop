@@ -14,34 +14,32 @@ import Product from "../Products/Product";
 import Products from "../Products/Products";
 
 const SingleProduct = () => {
-    const dispatch = useDispatch();
-    const { id } = useParams();
-    const navigate = useNavigate();
-    const { list, related } = useSelector(({ products }) => products);
-  
-    const { data, isLoading, isFetching, isSuccess } = useGetProductQuery({ id });
-  
-    useEffect(() => {
-      if (!isFetching && !isLoading && !isSuccess) {
-        navigate(ROUTES.HOME);
-      }
+  const dispatch = useDispatch();
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const { list, related } = useSelector(({ products }) => products);
+  const { data, isLoading, isFetching, isSuccess } = useGetProductQuery({ id });
 
-    }, [isLoading, isFetching, isSuccess]);
-  
-    useEffect(() => {
-      if (!data || !list.length) return;
+  useEffect(() => {
+    if (!isFetching && !isLoading && !isSuccess) {
+      navigate(ROUTES.HOME);
+    }
+  }, [isLoading, isFetching, isSuccess]);
 
-      dispatch(getRelatedProducts(data.category.id));
-    }, [data, dispatch, list.length]);
-  
-    return !data ? (
-      <section className="preloader">Loading...</section>
-    ) : (
-      <>
-        <Product {...data} />
+  useEffect(() => {
+    if (!data || !list.length) return;
+
+    dispatch(getRelatedProducts(data.category.id));
+  }, [data, dispatch, list.length]);
+
+  return (
+    <>
+      {data ? <Product {...data} /> : null}
+      {related && related.length > 0 ? (
         <Products products={related} amount={5} title="Related products" />
-      </>
-    );
-  };
-  
-  export default SingleProduct;
+      ) : null}
+    </>
+  );
+};
+
+export default SingleProduct;
