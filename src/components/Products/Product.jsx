@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { addToCart } from "../../feauters/actions/actions"; 
+
 
 import '../../styles/Product.css';
 
@@ -13,6 +15,10 @@ const Product = (item) => {
   
     const [currentImage, setCurrentImage] = useState(images[0]);
     const [currentSize, setCurrentSize] = useState();
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(item)); 
+    };
   
     return (
         <div className="product-cart">
@@ -50,7 +56,7 @@ const Product = (item) => {
                     <button className="bxl"> XL </button>
                 </div>
                 <div className="buttons-container">
-                        <button  className="Add-to-cart">
+                        <button  className="Add-to-cart" onClick={handleAddToCart}>
                             Add to cart
                         </button>
                         <button  className="Add-to-favorite">

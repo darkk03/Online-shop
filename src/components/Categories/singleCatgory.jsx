@@ -11,11 +11,11 @@ import Sidebar from "../Sidebar/Sidebar";
 import Products from "../Products/Products";
 
 const categoryToProductMap = {
-  1: 6,  
+  1: 5,  
   2: 7,  
   3: 9,
-  4: 13,
-  5: 28
+  4: 13, 
+  5: 8
 };
 
 const SingleCategory = () => {
