@@ -17,7 +17,7 @@ const Product = (item) => {
     const [currentSize, setCurrentSize] = useState();
 
     const handleAddToCart = () => {
-        dispatch(addToCart(item)); 
+        dispatch(addToCart({ ...item, quantity: 1 })); 
     };
   
     return (

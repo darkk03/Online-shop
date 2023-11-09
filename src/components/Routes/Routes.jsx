@@ -6,6 +6,7 @@ import Singleproduct from "../Products/singleproduct"
 import Help from "../help/help"
 import SingleCategory from "../Categories/singleCatgory"
 import Cart from "../Cart/Cart";
+import Payment from "../Payment/Payment"
 
 const AppRoutes = () => {
     return(
@@ -15,7 +16,7 @@ const AppRoutes = () => {
             <Route path={ROUTES.HELP} element={<Help />} />
             <Route path={ROUTES.CATEGORY} element={<SingleCategory />} />
             <Route path={ROUTES.CART} element={<Cart />} />
-
+            <Route path={ROUTES.PAY} element={<Payment/>}/>
         </Routes>
     );
 };

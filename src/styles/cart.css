@@ -37,8 +37,8 @@
 }
 
 .block-name-cat{
-    margin-bottom: 50px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .name{
@@ -53,7 +53,7 @@
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .image_{
@@ -77,8 +77,8 @@
 
 .quantity{
     display: flex;
-    margin-top: -40px;
-    margin-left: 100px;
+    margin-left: 120px;
+    margin-top: -20px;
 }
 
 .quantity-num{
@@ -87,44 +87,80 @@
     margin-right: 20px;
 }
 
+.total-total{
+    margin-top: -20px;
+    margin-left: 50px;
+}
 
+.icon-close_{
+    width: 20px;
+    margin-top: -110px;
+}
 
+.icon-close_ 
+{
+    fill: var(--grey);
+}
 
+.icon-close_:hover 
+{
+    fill: var(--violet-dark);
+    transition: fill 0.3s; 
+}
 
+.icon 
+{
+    fill: var(--grey);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.icon:hover 
+{
+    fill: var(--violet-dark);
+    transition: fill 0.3s; 
+}
 
 
 .actions{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
 }
 
- .total-total{
-    margin: 20px;
+ .total{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey);
+    margin-left: 20px;
 }
-
 
 .proceed{
     margin: 20px;
 } 
+
+.proceed {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: var(--white);
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.proceed {
+  background: var(--violet);
+  box-shadow: var(--violet);
+}
+
+.proceed:hover {
+  box-shadow: 0 0 5px var(--violet-dark),
+              0 0 25px var(--violet-dark),
+              0 0 50px var(--violet-dark),
+              0 0 100px var(--violet-dark);
+}
