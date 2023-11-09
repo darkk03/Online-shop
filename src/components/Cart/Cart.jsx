@@ -55,16 +55,16 @@ const Cart = () => {
                                             <use xlinkHref={`${sprite}#minus`} />
                                         </svg>
                                     </div>
-
-                                    <span>{quantity !== undefined ? quantity : 1}</span>
-
+                                    <div className="quantity-num">
+                                        <span>{quantity !== undefined ? quantity : 1}</span>
+                                    </div>
                                     <div className="plus">
                                         <svg className="icon">
                                             <use xlinkHref={`${sprite}#plus`} />
                                         </svg>
                                     </div>
                                 </div>
-                                <div className="total">{(price !== undefined && quantity !== undefined) ? price * quantity : 0}</div>
+                                <div className="total-total">{(price !== undefined && quantity !== undefined) ? price * quantity : 0}</div>
 
                                 <div className="close">
                                     <svg className="icon">
