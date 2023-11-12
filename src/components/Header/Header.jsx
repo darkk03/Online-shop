@@ -40,7 +40,7 @@ const Header = () => {
             </form>
 
             <div className="account">
-                <Link to={ROUTES.HOME} className="favorites">
+                <Link to={ROUTES.FAVORITES} className="favorites">
                     <svg className="icon_fav" style={{ width: '20px', height: '20px' }}>
                         <use xlinkHref={`${sprite}#heart`} />
                     </svg>

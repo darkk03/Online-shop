@@ -29,3 +29,18 @@ export const addToCart = (item) => {
         payload: item,
     };
 };
+
+
+export const removeFromFavorite = (itemId) => {
+    return {
+        type: "REMOVE_FROM_FAVORITE",
+        payload: itemId,
+    };
+};
+
+export const addToFavorite = (item) => {
+    return {
+        type: "ADD_TO_FAVORITE", 
+        payload: item,
+    };
+};

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../feauters/actions/actions"; 
+import { addToCart, addToFavorite } from "../../feauters/actions/actions"; 
 
 
 import '../../styles/Product.css';
@@ -18,6 +18,10 @@ const Product = (item) => {
 
     const handleAddToCart = () => {
         dispatch(addToCart({ ...item, quantity: 1 })); 
+    };
+
+    const handleAddToFavorite = () => {
+        dispatch(addToFavorite({ ...item, quantity: 1 })); 
     };
   
     return (
@@ -59,7 +63,7 @@ const Product = (item) => {
                         <button  className="Add-to-cart" onClick={handleAddToCart}>
                             Add to cart
                         </button>
-                        <button  className="Add-to-favorite">
+                        <button  className="Add-to-favorite" onClick={handleAddToFavorite}>
                             Add to favorite
                         </button>
                 </div>

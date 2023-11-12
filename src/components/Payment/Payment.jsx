@@ -106,6 +106,9 @@ const Payment = () => {
                 />
               </div>
             </div>
+            <div className="paybutton">
+                <button class="purchase--btn">Checkout</button>
+            </div>
           </div>
         </div>
       </>

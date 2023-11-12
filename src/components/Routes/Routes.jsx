@@ -7,6 +7,7 @@ import Help from "../help/help"
 import SingleCategory from "../Categories/singleCatgory"
 import Cart from "../Cart/Cart";
 import Payment from "../Payment/Payment"
+import Favorites from "../favorites/favorites"
 
 const AppRoutes = () => {
     return(
@@ -17,6 +18,7 @@ const AppRoutes = () => {
             <Route path={ROUTES.CATEGORY} element={<SingleCategory />} />
             <Route path={ROUTES.CART} element={<Cart />} />
             <Route path={ROUTES.PAY} element={<Payment/>}/>
+            <Route path={ROUTES.FAVORITES} element={<Favorites />}/>
         </Routes>
     );
 };

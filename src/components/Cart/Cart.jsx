@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, increaseQuantity, decreaseQuantity } from "../../feauters/actions/actions"; // Проверь правильность пути
+import { removeFromCart, increaseQuantity, decreaseQuantity } from "../../feauters/actions/actions"; 
 import sprite from '../../images/sprite.svg';
 import "../../styles/cart.css"
 import { ROUTES } from "../../utils/routes";

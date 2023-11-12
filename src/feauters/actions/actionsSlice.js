@@ -1,5 +1,6 @@
 const initialState = {
     cart: [],
+    favorite: [],
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -24,6 +25,21 @@ const cartReducer = (state = initialState, action) => {
                 return {
                     ...state,
                     cart: [...state.cart, { ...action.payload, quantity: action.payload.quantity || 1 }],
+                };
+            }
+        case "REMOVE_FROM_FAVORITE":
+            return {
+                ...state,
+                favorite: state.favorite.filter(item => item.id !== action.payload),
+            };
+        case "ADD_TO_FAVORITE":
+            const existingfavItem = state.favorite.find(item => item.id === action.payload.id);
+            if (existingfavItem) {
+                return state; 
+            } else {
+                return {
+                    ...state,
+                    favorite: [...state.favorite, action.payload],
                 };
             }
         case "INCREASE_QUANTITY":

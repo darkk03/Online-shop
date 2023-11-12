@@ -90,13 +90,6 @@
     margin-bottom: 20px;
 }
 
-.card-photo{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Выше, чем изображение */
-    color: white; /* Цвет текста */
-}
-
 .rccs__cvc__front{
     display: none;
 }
@@ -109,4 +102,35 @@
 .rccs__name,
 .rccs__expiry{
     margin-bottom: 10px;
+}
+
+.paybutton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.purchase--btn {
+    padding: 10px 235px;
+    border: none;
+    font-size: 17px;
+    color: var(--white);
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.purchase--btn {
+  background: var(--violet);
+  box-shadow: var(--violet);
+}
+
+.purchase--btn:hover {
+  box-shadow: 0 0 5px var(--violet-dark),
+              0 0 25px var(--violet-dark),
+              0 0 50px var(--violet-dark),
+              0 0 100px var(--violet-dark);
 }
