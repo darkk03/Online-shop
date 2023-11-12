@@ -1,3 +1,112 @@
-.credit-card-content{
+.rccs__card{
     text-align: center;
+}
+
+.rccs__card-content {
+
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+    max-width: 1560px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-back{
+    background-color: var(--bg);
+    margin-right: 550px;
+    margin-left: 550px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+    
+}
+
+
+.credit-card-content{
+    background-color: var(--dark); 
+    border-radius: 20px;
+    overflow: hidden; 
+    max-width: 1560px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card{
+    margin-left: 20px;
+}
+
+.form-control1{
+    margin-right: -15px;
+    width: 430px;
+}
+
+.form-control2{
+    margin-right: -32px;
+    width: 430px;
+}
+
+
+.form-control,
+.card{
+    width: auto;
+}
+
+.form-control,
+.form-control1,
+.form-control2,
+.card{
+    margin-left: 20px;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid var(--sea);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.form-control:focus,
+.card:focus,
+.form-control1:focus,
+.form-control2:focus {
+    border: 1px solid transparent;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 2px var(--sea);
+    background-color: transparent;
+    color: white;
+  }
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.col-sm-5{
+    margin-left: 20px;
+}
+
+.credit-card{
+    margin-bottom: 20px;
+}
+
+.card-photo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Выше, чем изображение */
+    color: white; /* Цвет текста */
+}
+
+.rccs__cvc__front{
+    display: none;
+}
+
+.rccs__expiry__valid{
+    display: none;
+}
+
+.rccs__number,
+.rccs__name,
+.rccs__expiry{
+    margin-bottom: 10px;
 }
