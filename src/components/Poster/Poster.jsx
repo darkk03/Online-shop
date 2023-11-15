@@ -22,9 +22,6 @@ const Poster = () => {
                         <h2 className="h2-poster">
                             WITH 4090Ti
                         </h2>
-                        <button className="poster-button">
-                            Buy Now
-                        </button>
                     </div>
                     <div className="poster-image">
                         <img src={pc} alt="Description of the image" />

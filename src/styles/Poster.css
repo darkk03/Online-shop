@@ -51,9 +51,10 @@
 
 .poster-subtext 
 {
-    line-height: 20px;
+    line-height: 80px;
     text-transform: uppercase;
     color: var(--sea);
+    margin-left: 5px;
 }
 
 .poster-image 
@@ -69,30 +70,5 @@
     bottom: -15%;
     right: 10%;
     max-width: unset;
-}
-
-.poster-button {
-  padding: 10px 20px;
-  border: none;
-  font-size: 17px;
-  color: var(--white);
-  border-radius: 7px;
-  letter-spacing: 4px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: 0.5s;
-  transition-property: box-shadow;
-}
-
-.poster-button {
-  background: var(--violet);
-  box-shadow: var(--violet);
-}
-
-.poster-button:hover {
-  box-shadow: 0 0 5px var(--violet-dark),
-              0 0 25px var(--violet-dark),
-              0 0 50px var(--violet-dark),
-              0 0 100px var(--violet-dark);
 }
 

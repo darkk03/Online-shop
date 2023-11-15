@@ -50,9 +50,6 @@ const Header = () => {
                     <svg className="icon_cart" style={{ width: '20px', height: '20px' }}>
                         <use xlinkHref={`${sprite}#bag`} />
                     </svg>
-                    <div className="count">
-                        1
-                    </div>
                 </Link>
             </div>
         </div> 
