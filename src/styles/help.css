@@ -17,24 +17,7 @@
     align-items: center;
     margin-left: 300px;
     margin-bottom: 20px;
-}
-
-.icon
-{
-    fill: var(--grey);
-}
-
-.help-input input 
-{
-    font-family: Montserrat, Roboto, sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--grey);
-    background: none;
-    outline: none;
-    width: 100%;
-    border: none;
-    outline: none;
+    /* justify-content: center; */
 }
 
 .help-header 
@@ -52,6 +35,7 @@
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.5;
+    padding: 20px;
 }
 
 .Ordering-and-Shipping{
@@ -253,4 +237,37 @@
     margin: 0 auto; 
     display: block;  
     margin-top: 40px; 
+}
+
+
+@media (max-width: 1600px){
+  .help-header{
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+  .h1_help{
+    line-height: 50px;
+    padding: 20px;
+  }
+
+  .Ordering-and-Shipping,
+  .Product-Information,
+  .Account-and-Payment,
+  .Contact-Us{
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 430px){
+
+  .oshlist,
+  .payitem,
+  .contitem,
+  .infitem{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

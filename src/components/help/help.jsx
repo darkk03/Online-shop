@@ -16,23 +16,9 @@ const Help = () => {
           Welcome to our Help Center
         </h1>
         <div className="header-main-text">
-          At [Your Online Store Name], we are committed to providing you with the best shopping experience. If you have any questions or need assistance, you've come to the right place. Our Help Center is designed to address common queries and concerns to make your shopping journey seamless.
+          At Shopsprint, we are committed to providing you with the best shopping experience. If you have any questions or need assistance, you've come to the right place. Our Help Center is designed to address common queries and concerns to make your shopping journey seamless.
           Browse through the categories below to find the answers you need:
         </div>
-        <form className="help-form">
-          <div className="icon">
-            <svg className="icon" style={{ width: '20px', height: '20px' }}>
-              <use xlinkHref={`${sprite}#search`} />
-            </svg>
-          </div>
-          <div className="help-input">
-            <input type="search" name="search" placeholder="Search..." autoComplete="off" onChange={() => {}} value=''/>
-          </div>
-                
-          <div className="box"></div>
-          {/* { false && <div className="box"></div>} */}
-                
-        </form>
       </div>
       <div className="help-body">
         <div className="Ordering-and-Shipping">
@@ -59,7 +45,7 @@ const Help = () => {
           <h2>Account and Payment</h2>
           <img src={pay} className="payimg"></img>
           <div className="paylist">
-            <button className='payitem' href="">Creating and managing your account</button>
+            <button className='payitem' href="">Managing your account</button>
             <button className='payitem' href="">Payment options</button>
             <button className='payitem' href="">Security and privacy</button>
             <button className='payitem' href="">Forgotten password</button>

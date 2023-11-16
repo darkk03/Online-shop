@@ -1,6 +1,6 @@
 .header
 {   
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 
 .info-header 
@@ -110,4 +110,40 @@
 {
     stroke: var(--violet-dark);
     transition: stroke 0.3s; 
+}
+
+@media (max-width: 1000px){
+
+    .user{
+        display: block;
+    }
+
+    .profile_photo{
+        margin-bottom: 5px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 900px){
+
+    .info-header{
+        display: block;
+    }
+
+    .user,
+    .account {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;      
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form{
+        width: auto;
+    }
 }

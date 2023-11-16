@@ -51,3 +51,29 @@
     max-width: 1600px; 
     margin: 0 auto;
 }
+
+
+@media (max-width: 950px){
+
+    .info_footer{
+      display: block;
+    }
+
+    .dev{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .logofooter{
+        display: flex;
+        justify-content: center;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: center;
+    }
+}

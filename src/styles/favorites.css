@@ -80,3 +80,19 @@
     margin-left: 110px;
     color: var(--grey);
 }
+
+@media (max-width: 1200px){
+
+  .footer{
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1200px){
+
+  .dev{
+    margin-left: 100px;
+  }
+}
+
