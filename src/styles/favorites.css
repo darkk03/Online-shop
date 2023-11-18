@@ -1,6 +1,5 @@
 .favorites-fav
 {
-  width: 100%;
   margin-bottom: 20px;
 
 }
@@ -81,18 +80,15 @@
     color: var(--grey);
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1650px){
 
-  .footer{
+  .favorites-fav{
     margin-left: 15px;
     margin-right: 20px;
   }
+
+
 }
 
-@media (max-width: 1200px){
 
-  .dev{
-    margin-left: 100px;
-  }
-}
 

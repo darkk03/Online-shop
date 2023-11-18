@@ -52,6 +52,12 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1650px){
+    .footer-content{
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+}
 
 @media (max-width: 950px){
 
