@@ -72,7 +72,7 @@ const Payment = () => {
               </div>
             </div>
             <br />
-            <div className="row">
+            <div className="row-down">
               <div className="col-sm-6">
                 <label for="name">Expiration Date</label>
                 <input

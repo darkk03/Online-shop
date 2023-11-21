@@ -1,5 +1,7 @@
 .rccs__card{
     text-align: center;
+    margin-left: 15px;
+    margin-right: 20px;
 }
 
 .rccs__card-content {
@@ -12,10 +14,13 @@
     padding: 20px;
 }
 
+.credit-card{
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
 .card-back{
     background-color: var(--bg);
-    margin-right: 550px;
-    margin-left: 550px;
     padding-bottom: 30px;
     padding-top: 30px;
     border-radius: 20px;
@@ -77,7 +82,8 @@
     color: white;
   }
 
-.row{
+.row,
+.row-down{
     display: flex;
     justify-content: center;
 }
@@ -134,3 +140,49 @@
               0 0 50px var(--violet-dark),
               0 0 100px var(--violet-dark);
 }
+
+@media (max-width: 700px){
+    .form-control1,
+    .form-control2{
+        width: auto;
+    }
+
+    .col-sm-6{
+        display: block;
+    }
+
+    .row-down{
+        display: block;
+    }
+
+    .col-sm-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-sm-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 90px;
+    }
+
+    .purchase--btn{
+        padding: 20px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 430px){
+    .col-sm-6{
+        display: block;
+    }
+
+    .col-sm-5{
+        display: block;
+        margin-left: 0;
+    }
+}
+
